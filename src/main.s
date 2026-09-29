@@ -1,5 +1,6 @@
 .include "snes.inc"
 .include "sniperengine/se.inc"
+;.include "snesmod_dev.s" ; sound driver
 
 .include "header.s"
 .include "vectors.s"
@@ -39,6 +40,16 @@
         wdm #0
         lda #0
         jsl SE_PPU_SET_PALETTE_SET
+
+
+
+
+
+        setxy16
+        seta8
+        php
+        jsl SPC_BOOT
+        plp
 
         
 

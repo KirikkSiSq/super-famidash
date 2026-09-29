@@ -21,4 +21,7 @@ SE_PPU_CLEAR_PALETTE =          SE_BASE_ADDRESS + $1e
 
 
 
+SPC_BOOT =                  SE_BASE_ADDRESS + $80
+
+
 SE_IDENTITY_TABLE =     SE_BASE_ADDRESS + $100
